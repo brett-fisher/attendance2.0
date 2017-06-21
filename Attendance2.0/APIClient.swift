@@ -17,6 +17,11 @@ class APIClient {
         ref = FIRDatabase.database().reference()
     }
     
+    
+    
+    /// Retrieves a list of all courses in the database
+    ///
+    /// - Parameter completion: returns an array of Courses
     public func getAllCourses(completion: @escaping ([Course]) -> Void) {
         ref.child(DatabaseRef.courses).observeSingleEvent(of: .value, with: { (snapshot) in
             var courses = [Course]()
@@ -32,14 +37,24 @@ class APIClient {
     
     
     //MARK: - Courses
+    
+    
+    /// Adds a new course to Firebase Database
+    ///
+    /// - Parameter course: Course to add to database
     public func add(course: Course) {
         ref.child(DatabaseRef.courses).childByAutoId().setValue([DatabaseRef.name: course.name, DatabaseRef.location: course.location, DatabaseRef.totalStudents: course.totalStudents])
     }
     
+    
+    
+    /// Adds a student to course roster. If student does not exists in database, he/she is added to list of all students in database
+    ///
+    /// - Parameters:
+    ///   - student: Student to add to course
+    ///   - course: Course student is being added to
     public func add(student: Student, toCourse course: Course) {
-        
         var studentToAdd = student
-        
         ref.child(DatabaseRef.students).child(student.id).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 studentToAdd = Student(snapshot: snapshot)
@@ -57,10 +72,20 @@ class APIClient {
     
     //MARK: - Students
     
+    
+    /// Adds student to database to list of all students
+    ///
+    /// - Parameter student: Student adding
     public func add(student: Student) {
         ref.child(DatabaseRef.students).child(student.id).updateChildValues([DatabaseRef.name: student.name, DatabaseRef.id: student.id, DatabaseRef.totalClasses: student.totalClasses])
     }
     
+    
+    /// Removes a student from a course
+    ///
+    /// - Parameters:
+    ///   - student: Student to remove
+    ///   - course: Course to remove student from
     public func remove(student: Student, fromCourse course: Course) {
         ref.child(DatabaseRef.courses).child(course.id).child(DatabaseRef.students).child(student.id).removeValue()
     }
