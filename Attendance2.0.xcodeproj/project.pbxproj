@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1409E7FF1EFABC9F0088A297 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */; };
+		476A85BCB5ADE2710D9DD284 /* Pods_Attendance2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */; };
 		D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */; };
 		D09CDFB21EFAB731008FCC50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFB11EFAB731008FCC50 /* ViewController.swift */; };
 		D09CDFB51EFAB731008FCC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB31EFAB731008FCC50 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.release.xcconfig"; sourceTree = "<group>"; };
 		D09CDFAC1EFAB731008FCC50 /* Attendance2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09CDFB11EFAB731008FCC50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476A85BCB5ADE2710D9DD284 /* Pods_Attendance2_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7FC93A103CCC045AA3ACCF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */,
+				B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D09CDFA31EFAB731008FCC50 = {
 			isa = PBXGroup;
 			children = (
 				D09CDFAE1EFAB731008FCC50 /* Attendance2.0 */,
 				D09CDFAD1EFAB731008FCC50 /* Products */,
+				C7FC93A103CCC045AA3ACCF0 /* Pods */,
+				D67EF1A11F9E0DB1EABFFE99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		D09CDFAE1EFAB731008FCC50 /* Attendance2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */,
 				D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */,
 				D09CDFB11EFAB731008FCC50 /* ViewController.swift */,
 				D09CDFB31EFAB731008FCC50 /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = Attendance2.0;
 			sourceTree = "<group>";
 		};
+		D67EF1A11F9E0DB1EABFFE99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D09CDFBE1EFAB731008FCC50 /* Build configuration list for PBXNativeTarget "Attendance2.0" */;
 			buildPhases = (
+				4DF1E0D7C73FE5A5934C5013 /* [CP] Check Pods Manifest.lock */,
 				D09CDFA81EFAB731008FCC50 /* Sources */,
 				D09CDFA91EFAB731008FCC50 /* Frameworks */,
 				D09CDFAA1EFAB731008FCC50 /* Resources */,
+				F2264757F1DABAADE1C9B12A /* [CP] Embed Pods Frameworks */,
+				D473A639F12B44F5E987E871 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +126,7 @@
 				TargetAttributes = {
 					D09CDFAB1EFAB731008FCC50 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = QK5WLWAWC3;
+						DevelopmentTeam = DGYJ3R2C9F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1409E7FF1EFABC9F0088A297 /* GoogleService-Info.plist in Resources */,
 				D09CDFBA1EFAB731008FCC50 /* LaunchScreen.storyboard in Resources */,
 				D09CDFB71EFAB731008FCC50 /* Assets.xcassets in Resources */,
 				D09CDFB51EFAB731008FCC50 /* Main.storyboard in Resources */,
@@ -131,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF1E0D7C73FE5A5934C5013 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D473A639F12B44F5E987E871 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2264757F1DABAADE1C9B12A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D09CDFA81EFAB731008FCC50 /* Sources */ = {
@@ -259,9 +338,10 @@
 		};
 		D09CDFBF1EFAB731008FCC50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QK5WLWAWC3;
+				DEVELOPMENT_TEAM = DGYJ3R2C9F;
 				INFOPLIST_FILE = Attendance2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fish.Attendance2-0";
@@ -272,9 +352,10 @@
 		};
 		D09CDFC01EFAB731008FCC50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QK5WLWAWC3;
+				DEVELOPMENT_TEAM = DGYJ3R2C9F;
 				INFOPLIST_FILE = Attendance2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fish.Attendance2-0";
@@ -302,6 +383,7 @@
 				D09CDFC01EFAB731008FCC50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
