@@ -132,7 +132,7 @@
 				TargetAttributes = {
 					D09CDFAB1EFAB731008FCC50 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = DGYJ3R2C9F;
+						DevelopmentTeam = QK5WLWAWC3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -349,7 +349,7 @@
 			baseConfigurationReference = 2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DGYJ3R2C9F;
+				DEVELOPMENT_TEAM = QK5WLWAWC3;
 				INFOPLIST_FILE = Attendance2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fish.Attendance2-0";
@@ -363,7 +363,7 @@
 			baseConfigurationReference = B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DGYJ3R2C9F;
+				DEVELOPMENT_TEAM = QK5WLWAWC3;
 				INFOPLIST_FILE = Attendance2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fish.Attendance2-0";
