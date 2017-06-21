@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1409E7FF1EFABC9F0088A297 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */; };
+		1409E8071EFAC2630088A297 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E8061EFAC2630088A297 /* APIClient.swift */; };
+		1409E8091EFAC2EF0088A297 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E8081EFAC2EF0088A297 /* Course.swift */; };
+		1409E80B1EFAC2F60088A297 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E80A1EFAC2F60088A297 /* Student.swift */; };
 		476A85BCB5ADE2710D9DD284 /* Pods_Attendance2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */; };
 		D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */; };
+
+
 		D09CDFB21EFAB731008FCC50 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */; };
+
 		D09CDFB51EFAB731008FCC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB31EFAB731008FCC50 /* Main.storyboard */; };
 		D09CDFB71EFAB731008FCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB61EFAB731008FCC50 /* Assets.xcassets */; };
 		D09CDFBA1EFAB731008FCC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB81EFAB731008FCC50 /* LaunchScreen.storyboard */; };
@@ -20,12 +26,18 @@
 
 /* Begin PBXFileReference section */
 		1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1409E8061EFAC2630088A297 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1409E8081EFAC2EF0088A297 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1409E80A1EFAC2F60088A297 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.release.xcconfig"; sourceTree = "<group>"; };
 		D09CDFAC1EFAB731008FCC50 /* Attendance2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
+
 		D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+
 		D09CDFB41EFAB731008FCC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D09CDFB61EFAB731008FCC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09CDFB91EFAB731008FCC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +58,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1409E80D1EFAC3040088A297 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1409E8061EFAC2630088A297 /* APIClient.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		1409E80E1EFAC30D0088A297 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1409E8081EFAC2EF0088A297 /* Course.swift */,
+				1409E80A1EFAC2F60088A297 /* Student.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1409E80F1EFAC3140088A297 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1409E8101EFAC31B0088A297 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D09CDFB81EFAB731008FCC50 /* LaunchScreen.storyboard */,
+				D09CDFB31EFAB731008FCC50 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		C7FC93A103CCC045AA3ACCF0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,14 +121,20 @@
 		D09CDFAE1EFAB731008FCC50 /* Attendance2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */,
 				D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */,
+
+				1409E80F1EFAC3140088A297 /* Controllers */,
+				1409E8101EFAC31B0088A297 /* Views */,
+				1409E80D1EFAC3040088A297 /* Networking */,
+				1409E80E1EFAC30D0088A297 /* Models */,
+				1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */,
+
 				D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */,
 				D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */,
 				D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */,
 				D09CDFB31EFAB731008FCC50 /* Main.storyboard */,
+
 				D09CDFB61EFAB731008FCC50 /* Assets.xcassets */,
-				D09CDFB81EFAB731008FCC50 /* LaunchScreen.storyboard */,
 				D09CDFBB1EFAB731008FCC50 /* Info.plist */,
 			);
 			path = Attendance2.0;
@@ -222,10 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				1409E8091EFAC2EF0088A297 /* Course.swift in Sources */,
+
 				D09CDFC21EFAC767008FCC50 /* CoursesTableViewCell.swift in Sources */,
 				D09CDFC41EFAD0A2008FCC50 /* AddCourseViewController.swift in Sources */,
 				D09CDFB21EFAB731008FCC50 /* CoursesViewController.swift in Sources */,
+
 				D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */,
+				1409E80B1EFAC2F60088A297 /* Student.swift in Sources */,
+				1409E8071EFAC2630088A297 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
