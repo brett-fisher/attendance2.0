@@ -15,6 +15,7 @@
 		D09CDFB71EFAB731008FCC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB61EFAB731008FCC50 /* Assets.xcassets */; };
 		D09CDFBA1EFAB731008FCC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB81EFAB731008FCC50 /* LaunchScreen.storyboard */; };
 		D09CDFC21EFAC767008FCC50 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */; };
+		D09CDFC41EFAD0A2008FCC50 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D09CDFB91EFAB731008FCC50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09CDFBB1EFAB731008FCC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
+		D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				1409E7FE1EFABC9F0088A297 /* GoogleService-Info.plist */,
 				D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */,
 				D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */,
+				D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */,
 				D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */,
 				D09CDFB31EFAB731008FCC50 /* Main.storyboard */,
 				D09CDFB61EFAB731008FCC50 /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09CDFC21EFAC767008FCC50 /* CoursesTableViewCell.swift in Sources */,
+				D09CDFC41EFAD0A2008FCC50 /* AddCourseViewController.swift in Sources */,
 				D09CDFB21EFAB731008FCC50 /* CoursesViewController.swift in Sources */,
 				D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */,
 			);

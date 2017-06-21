@@ -33,6 +33,21 @@ class CoursesViewController: UITableViewController {
         cell.courseNameLabel.text = dummyClassData[indexPath.row]
         return cell
     }
+    
+    // MARK: - Segue Methods
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddCourse" {
+            let nav = segue.destination as! UINavigationController
+            let controller = nav.topViewController as! AddCourseViewController!
+            controller?.delegate = self
+        }
+    }
 
 }
 
+extension CoursesViewController: AddCourseViewControllerDelegate {
+    func addCourseViewControllerDidCancel(_ controller: AddCourseViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+}
