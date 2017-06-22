@@ -9,11 +9,19 @@
 import UIKit
 
 class CoursesViewController: UITableViewController {
+
     
-    var dummyClassData = ["IST 110", "IST 452", "SRA 200"]
+    var courses = [Course]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        APIClient.sharedInstance.getAllCourses { (courses) in
+            self.courses = courses
+            self.tableView.reloadData()
+        }
+        
         print("The view has loaded successfully.")
     }
 
@@ -24,13 +32,13 @@ class CoursesViewController: UITableViewController {
     // MARK: - Data Source Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyClassData.count
+        return self.courses.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CoursesTableViewCell
-        cell.courseNameLabel.text = dummyClassData[indexPath.row]
+        cell.courseNameLabel.text = courses[indexPath.row].name
         return cell
     }
     
