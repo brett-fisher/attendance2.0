@@ -23,7 +23,7 @@ class APIClient {
     ///
     /// - Parameter completion: returns an array of Courses
     public func getAllCourses(completion: @escaping ([Course]) -> Void) {
-        ref.child(DatabaseRef.courses).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child(DatabaseRef.courses).observe(.value, with: { (snapshot) in
             var courses = [Course]()
             for child in snapshot.children {
                 let childSnap = child as! FIRDataSnapshot

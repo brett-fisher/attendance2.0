@@ -16,7 +16,7 @@ class CoursesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+    
         APIClient.sharedInstance.getAllCourses { (courses) in
             self.courses = courses
             self.tableView.reloadData()
@@ -59,3 +59,12 @@ extension CoursesViewController: AddCourseViewControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
 }
+
+
+
+
+
+
+
+
+
