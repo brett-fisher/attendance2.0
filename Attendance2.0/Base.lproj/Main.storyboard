@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="A1s-s2-O39">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="A1s-s2-O39" customClass="StudentCell" customModule="Attendance2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A1s-s2-O39" id="uaI-kk-hgf">
@@ -93,6 +93,9 @@
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="profileImageView" destination="MBG-Qh-yB0" id="fE8-ab-Y4M"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -100,10 +103,7 @@
                             <outlet property="delegate" destination="gsJ-0g-OgM" id="2yp-IU-lij"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="whV-Hb-XXz"/>
-                        <barButtonItem title="Item" id="E67-Rn-pxL"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="O7I-do-7x7">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="lH4-tm-nde">
                             <connections>
@@ -112,10 +112,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="nameLabel" destination="1xP-pk-9Ss" id="kFU-9K-GVV"/>
-                        <outlet property="profileImageView" destination="MBG-Qh-yB0" id="F3X-eW-Ays"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lD6-V3-za5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

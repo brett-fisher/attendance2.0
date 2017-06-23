@@ -17,8 +17,6 @@ class StudentListTableTableViewController: UITableViewController {
     
     //MARK: Outlets
     
-    @IBOutlet weak var profileImageView: ProfileImageView!
-    @IBOutlet weak var nameLabel: UILabel!
     
     //MARK: Actions
     
@@ -26,8 +24,6 @@ class StudentListTableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        profileImageView.backgroundColor = .orange
 
     }
 
