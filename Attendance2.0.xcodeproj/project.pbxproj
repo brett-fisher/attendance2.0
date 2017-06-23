@@ -22,6 +22,7 @@
 		D09CDFBA1EFAB731008FCC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09CDFB81EFAB731008FCC50 /* LaunchScreen.storyboard */; };
 		D09CDFC21EFAC767008FCC50 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */; };
 		D09CDFC41EFAD0A2008FCC50 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */; };
+		D0FF408B1EFC97E2002D18CE /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF408A1EFC97E2002D18CE /* AddStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D09CDFBB1EFAB731008FCC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		D0FF408A1EFC97E2002D18CE /* AddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				14657E221EFC92D300FB0989 /* StudentListTableTableViewController.swift */,
 				D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */,
 				D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */,
+				D0FF408A1EFC97E2002D18CE /* AddStudentViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				1409E80B1EFAC2F60088A297 /* Student.swift in Sources */,
 				14657E251EFC933600FB0989 /* ProfileImageView.swift in Sources */,
 				14657E231EFC92D300FB0989 /* StudentListTableTableViewController.swift in Sources */,
+				D0FF408B1EFC97E2002D18CE /* AddStudentViewController.swift in Sources */,
 				1409E8071EFAC2630088A297 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

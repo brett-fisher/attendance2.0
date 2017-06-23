@@ -41,7 +41,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="courseNameLabel" destination="dss-P0-FUQ" id="eD8-lp-Iec"/>
-                                    <segue destination="fMG-8r-OfO" kind="show" identifier="SelectCourse" id="e4V-Co-wup"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,7 +53,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="IzG-PI-x4W">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="lji-sd-xGu" kind="presentation" identifier="AddCourse" id="cEq-MD-5RR"/>
+                                <segue destination="gsJ-0g-OgM" kind="show" identifier="SelectCourse" id="mB7-nA-UeG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,7 +106,7 @@
                     <navigationItem key="navigationItem" id="O7I-do-7x7">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="lH4-tm-nde">
                             <connections>
-                                <segue destination="RTk-ph-Y4R" kind="presentation" id="YTb-3H-Ejy"/>
+                                <segue destination="RTk-ph-Y4R" kind="presentation" id="vqR-1o-3CH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -219,28 +218,10 @@
             </objects>
             <point key="canvasLocation" x="1720.8" y="112.89355322338831"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="YeY-UN-FsQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fMG-8r-OfO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v5M-Ad-50N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="gsJ-0g-OgM" kind="relationship" relationship="rootViewController" id="U4x-RM-e2t"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XlO-W2-Ukd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1064.8" y="941.37931034482767"/>
-        </scene>
-        <!--Add Course View Controller-->
+        <!--Add Student View Controller-->
         <scene sceneID="hxe-sj-7o4">
             <objects>
-                <viewController id="tPx-Su-kTL" customClass="AddCourseViewController" customModule="Attendance2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tPx-Su-kTL" customClass="AddStudentViewController" customModule="Attendance2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="303-qc-DLT"/>
                         <viewControllerLayoutGuide type="bottom" id="PEo-0Q-bQn"/>
@@ -275,7 +256,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -284,19 +265,19 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="U7c-RF-Jx5">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="cancel:" destination="tPx-Su-kTL" id="BNi-v0-Vkv"/>
+                                <action selector="cancel:" destination="tPx-Su-kTL" id="lKz-7O-MUt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Bvn-G3-DNd">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="save:" destination="tPx-Su-kTL" id="tlD-Fi-WZv"/>
+                                <action selector="save:" destination="tPx-Su-kTL" id="cu9-w9-Dkw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="classLocationTextField" destination="mRU-Tr-mna" id="eIC-QK-CFz"/>
-                        <outlet property="classNameTextField" destination="9Po-vB-2CL" id="9ay-gW-DaT"/>
+                        <outlet property="nineDigitTextField" destination="mRU-Tr-mna" id="wVm-lB-dtn"/>
+                        <outlet property="studentNameTextField" destination="9Po-vB-2CL" id="kD7-yO-hWq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3d-ak-S2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
