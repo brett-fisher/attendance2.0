@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fSv-4f-Ctr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fSv-4f-Ctr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,6 +41,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="courseNameLabel" destination="dss-P0-FUQ" id="eD8-lp-Iec"/>
+                                    <segue destination="fMG-8r-OfO" kind="show" identifier="SelectCourse" id="e4V-Co-wup"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,6 +62,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X85-Lc-H2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792.79999999999995" y="112.89355322338831"/>
+        </scene>
+        <!--Student List Table Table View Controller-->
+        <scene sceneID="LXR-nO-xwJ">
+            <objects>
+                <tableViewController id="gsJ-0g-OgM" customClass="StudentListTableTableViewController" customModule="Attendance2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" id="ymW-nl-bi7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="A1s-s2-O39">
+                                <rect key="frame" x="0.0" y="28" width="375" height="103"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A1s-s2-O39" id="uaI-kk-hgf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="102.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xP-pk-9Ss">
+                                            <rect key="frame" x="86" y="41" width="281" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-Qh-yB0" customClass="ProfileImageView" customModule="Attendance2_0" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="16" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gsJ-0g-OgM" id="jxI-Hm-0qu"/>
+                            <outlet property="delegate" destination="gsJ-0g-OgM" id="2yp-IU-lij"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="whV-Hb-XXz"/>
+                        <barButtonItem title="Item" id="E67-Rn-pxL"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="O7I-do-7x7">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="lH4-tm-nde"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="1xP-pk-9Ss" id="kFU-9K-GVV"/>
+                        <outlet property="profileImageView" destination="MBG-Qh-yB0" id="F3X-eW-Ays"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lD6-V3-za5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2004" y="941.37931034482767"/>
         </scene>
         <!--Add Course View Controller-->
         <scene sceneID="zbw-lq-jnC">
@@ -163,6 +218,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfS-8s-Fd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1720.8" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YeY-UN-FsQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fMG-8r-OfO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v5M-Ad-50N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gsJ-0g-OgM" kind="relationship" relationship="rootViewController" id="U4x-RM-e2t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlO-W2-Ukd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="941.37931034482767"/>
         </scene>
     </scenes>
 </document>

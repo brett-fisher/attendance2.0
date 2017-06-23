@@ -11,6 +11,9 @@
 		1409E8071EFAC2630088A297 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E8061EFAC2630088A297 /* APIClient.swift */; };
 		1409E8091EFAC2EF0088A297 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E8081EFAC2EF0088A297 /* Course.swift */; };
 		1409E80B1EFAC2F60088A297 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E80A1EFAC2F60088A297 /* Student.swift */; };
+		14657E231EFC92D300FB0989 /* StudentListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14657E221EFC92D300FB0989 /* StudentListTableTableViewController.swift */; };
+		14657E251EFC933600FB0989 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14657E241EFC933600FB0989 /* ProfileImageView.swift */; };
+		14657E271EFC93D400FB0989 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14657E261EFC93D400FB0989 /* StudentCell.swift */; };
 		476A85BCB5ADE2710D9DD284 /* Pods_Attendance2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */; };
 		D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFAF1EFAB731008FCC50 /* AppDelegate.swift */; };
 		D09CDFB21EFAB731008FCC50 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */; };
@@ -26,6 +29,9 @@
 		1409E8061EFAC2630088A297 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1409E8081EFAC2EF0088A297 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		1409E80A1EFAC2F60088A297 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		14657E221EFC92D300FB0989 /* StudentListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListTableTableViewController.swift; sourceTree = "<group>"; };
+		14657E241EFC933600FB0989 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		14657E261EFC93D400FB0989 /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		17C58519E777439BF943B73B /* Pods_Attendance2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5F669913483DA87CFAAFC7 /* Pods-Attendance2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		B51A28F078D54CF19D014EC6 /* Pods-Attendance2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance2.0/Pods-Attendance2.0.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 		1409E80F1EFAC3140088A297 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14657E221EFC92D300FB0989 /* StudentListTableTableViewController.swift */,
 				D09CDFB11EFAB731008FCC50 /* CoursesViewController.swift */,
 				D09CDFC31EFAD0A2008FCC50 /* AddCourseViewController.swift */,
 			);
@@ -81,6 +88,8 @@
 		1409E8101EFAC31B0088A297 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				14657E261EFC93D400FB0989 /* StudentCell.swift */,
+				14657E241EFC933600FB0989 /* ProfileImageView.swift */,
 				D09CDFC11EFAC767008FCC50 /* CoursesTableViewCell.swift */,
 			);
 			name = Views;
@@ -276,7 +285,10 @@
 				D09CDFC41EFAD0A2008FCC50 /* AddCourseViewController.swift in Sources */,
 				D09CDFB21EFAB731008FCC50 /* CoursesViewController.swift in Sources */,
 				D09CDFB01EFAB731008FCC50 /* AppDelegate.swift in Sources */,
+				14657E271EFC93D400FB0989 /* StudentCell.swift in Sources */,
 				1409E80B1EFAC2F60088A297 /* Student.swift in Sources */,
+				14657E251EFC933600FB0989 /* ProfileImageView.swift in Sources */,
+				14657E231EFC92D300FB0989 /* StudentListTableTableViewController.swift in Sources */,
 				1409E8071EFAC2630088A297 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

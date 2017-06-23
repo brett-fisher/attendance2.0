@@ -42,6 +42,11 @@ class CoursesViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let course = self.courses[indexPath.row]
+        self.performSegue(withIdentifier: "SelectCourse", sender: course)
+    }
+    
     // MARK: - Segue Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,6 +54,10 @@ class CoursesViewController: UITableViewController {
             let nav = segue.destination as! UINavigationController
             let controller = nav.topViewController as! AddCourseViewController!
             controller?.delegate = self
+        }else if segue.identifier == "SelectCourse" {
+            if let course = sender as? Course {
+                
+            }
         }
     }
 
